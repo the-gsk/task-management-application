@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<form method="post" class="task-board create-new-task-block " >
+    {% csrf_token %}
+    <strong>Login</strong>
+    {{ form.non_field_errors }}
+    <div class="form-row">
+        <label class="form-row-label" for="{{ form.username.id_for_label }}">Username</label>
+        <input class="form-row-input" type="text" name="{{ form.username.name }}" id="{{ form.username.id_for_label }}" value="{{ form.username.value|default:'' }}" required>
+    </div>
+    {{ form.username.errors }}
+
+    <div class="form-row">
+        <label class="form-row-label" for="{{ form.description.id_for_label }}">Password</label>
+        <input class="form-row-input" type="password" name="{{ form.password.name }}" id="{{ form.password.id_for_label }}" value="" required>
+    </div>
+    {{ form.password.errors }}
+
+    <div class="form-row-buttons">
+        <button type="submit" id="save-button">Login</button>
+    </div>
+</form>
+    
+{% endblock body %}
+{% block extrajs %}
+<script>
+    var isAuthenticated = {{user.is_authenticated|lower}};
+
+    if (isAuthenticated) {
+        window.location.href = "{% url 'task_list' %}";
+    }
+</script>
+{% endblock extrajs %}
+    

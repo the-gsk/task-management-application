@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<form method="post" class="task-board create-new-task-block " >
+    {% csrf_token %}
+    <strong>New Task</strong>
+    {{ form.non_field_errors }}
+    <div class="form-row">
+        <label class="form-row-label" for="{{ form.title.id_for_label }}">Task</label>
+        {{ form.title }}
+        {{ form.title.errors }}
+    </div>
+    <div class="form-row">
+        <label class="form-row-label" for="{{ form.description.id_for_label }}">Description</label>
+        {{ form.description }}
+    </div>
+    {{ form.description.errors }}
+
+    <div class="form-row">
+        <label class="form-row-label" for="{{ form.status.id_for_label }}">Status</label>
+        {{ form.status }}
+    </div>
+    {{ form.status.errors }}
+
+    <div class="form-row">
+        <label class="form-row-label" for="{{ form.due_date.id_for_label }}">Due Date</label>
+        {{form.due_date}}
+    </div>
+    {{ form.due_date.errors }}
+    
+    <div class="form-row-buttons">
+        <button type="submit" id="save-button">Save</button>
+        <button type="button" id="cancel-button" onclick="redirectToTaskList()">Cancel</button>
+    </div>
+</form>
+
+    
+{% endblock body %}
+    

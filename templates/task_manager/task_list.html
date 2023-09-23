@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<div class="task-board">
+    <div class="kanban-block" id="todo">
+        <strong>Pending</strong>
+        {% for task in tasks %}
+            {% if task.status == 'pending' %}
+            <div class="task" id="task-{{task.id}}" onclick="editTask(`{% url 'task_detail' task.id %}`)">
+                <span>{{task.title}}</span>
+                <div class="task-info">
+                    <span class="task-due">{{task.due_date}}</span>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <div class="kanban-block" id="inprogress">
+        <strong>In Progress</strong>
+        {% for task in tasks %}
+            {% if task.status == 'in_progress' %}
+            <div class="task" id="task-{{task.id}}" onclick="editTask(`{% url 'task_detail' task.id %}`)">
+                <span>{{task.title}}</span>
+                <div class="task-info">
+                    <span class="task-due">{{task.due_date}}</span>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <div class="kanban-block" id="done">
+        <strong>Completed</strong>
+        {% for task in tasks %}
+            {% if task.status == 'completed' %}
+            <div class="task" id="task-{{task.id}}" onclick="editTask(`{% url 'task_detail' task.id %}`)">
+                <span>{{task.title}}</span>
+                <div class="task-info">
+                    <span class="task-due">{{task.due_date}}</span>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+    
+{% endblock body %}
+    

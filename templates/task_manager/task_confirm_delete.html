@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Task</title>
+</head>
+<body>
+    <h1>Delete Task</h1>
+    <p>Are you sure you want to delete the following task?</p>
+    <table>
+        <tr>
+            <th>Title:</th>
+            <td>{{ task.title }}</td>
+        </tr>
+        <tr>
+            <th>Description:</th>
+            <td>{{ task.description }}</td>
+        </tr>
+        <tr>
+            <th>Due Date:</th>
+            <td>{{ task.due_date }}</td>
+        </tr>
+        <tr>
+            <th>Status:</th>
+            <td>{{ task.status }}</td>
+        </tr>
+        <tr>
+            <th>Assignee:</th>
+            <td>{{ task.assignee }}</td>
+        </tr>
+    </table>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Confirm Delete</button>
+    </form>
+    <a href="{% url 'task_list' %}">Cancel</a>
+</body>
+</html>
