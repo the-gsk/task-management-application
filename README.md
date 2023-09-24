@@ -29,9 +29,12 @@ This is a simple task management application built with Django. It allows users 
 
 ## Installation
 1. Clone the repository to your local machine:
+  - https://github.com/the-gsk/task-management-application.git
 
 
 2. Create a virtual environment on python (3.10):
+  - https://docs.python.org/3/
+  - https://docs.python.org/3/library/venv.html
 
 3. Activate the virtual environment:
 - On Windows:
@@ -43,17 +46,17 @@ This is a simple task management application built with Django. It allows users 
   source venv/bin/activate
   ```
 
-4. Install project dependencies:
+1. Install project dependencies:
     ```
     pip install -r requirements.txt
     ```
 
-5. Run database migrations:
+2. Run database migrations:
     ```
     python manage.py migrate
     ```
 
-6. Start the development server:
+3. Start the development server:
     ```
     python manage.py runserver
     ```
@@ -68,7 +71,18 @@ This is a simple task management application built with Django. It allows users 
 4. For Access the Task Board in your web browser at http://localhost:8000/tasks/
 
 5. Further Task Realted things you will see on web page (ex: Task Create, Task Details, Task Edit/Update and Task Delete)
-   
+  <div style="display: flex; align-items: center;">
+    <img src="media/sc1.png" alt="Project Logo" style="width: 33%; margin-right: 10px;" />
+    <img src="media/sc2.png" alt="Project Logo" style="width: 33%; margin-right: 10px;" />
+    <img src="media/sc6.png" alt="Project Logo" style="width: 33%; margin-right: 10px;" />
+  </div>
+  <div style="display: flex; align-items: center;">
+    <img src="media/sc4.png" alt="Project Logo" style="width: 33%; margin-right: 10px;" />
+    <img src="media/sc3.png" alt="Project Logo" style="width: 33%; margin-right: 10px;" />
+    <img src="media/sc5.png" alt="Project Logo" style="width: 33%; margin-right: 10px;" />
+  </div>
+
+  
 ## => Through the Api
 
 ### API Documentation
@@ -161,12 +175,6 @@ This is a simple task management application built with Django. It allows users 
     - Authorization: Token <>your-auth-token<>
   - Description: Use this endpoint to delete a task by specifying its ID.
 
-
-## Usage
-- Register a new user account and log in account you created during Registration.
-
-- Create, view, update, and delete tasks as a logged-in user.
-
 ## Testing
 - Unit tests have been included for key components, such as user registration, task creation, and task editing.
 - Use Django's testing framework to run the tests.
@@ -175,6 +183,12 @@ To run the tests, use the following command:
 ```
   python manage.py test
 ```
+
+## Usage
+- Register a new user account and log in account you created during Registration.
+
+- Create, view, update, and delete tasks as a logged-in user.
+
 
 <!-- ## Contributing
 Contributions are welcome! If you'd like to contribute to this project, please follow these guidelines:
@@ -188,4 +202,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <!-- ## Acknowledgments
 - Thanks to the Django community for their excellent documentation and resources. -->
+<!-- - https://xp.io/storage/1zR8ibsR.png -->
 
