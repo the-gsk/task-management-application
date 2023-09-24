@@ -72,14 +72,14 @@ This is a simple task management application built with Django. It allows users 
 
 5. Further Task Realted things you will see on web page (ex: Task Create, Task Details, Task Edit/Update and Task Delete)
   <div style="display: flex; align-items: center;">
-    <img src="https://xp.io/storage/1zTiGZ90.png" alt="Project Logo" style="width: 33%; margin-right: 10px;" />
-    <img src="https://xp.io/storage/1zTkq2c4.png" alt="Project Logo" style="width: 33%; margin-right: 10px;" />
-    <img src="https://xp.io/storage/1zTv969H.png" alt="Project Logo" style="width: 33%; margin-right: 10px;" />
+    <img src="https://xp.io/storage/1zTiGZ90.png" alt="Project Logo" style="width: 30%; margin-right: 10px;" />
+    <img src="https://xp.io/storage/1zTkq2c4.png" alt="Project Logo" style="width: 30%; margin-right: 10px;" />
+    <img src="https://xp.io/storage/1zTv969H.png" alt="Project Logo" style="width: 30%; margin-right: 10px;" />
   </div>
   <div style="display: flex; align-items: center;">
-    <img src="https://xp.io/storage/1zTmHM0J.png" alt="Project Logo" style="width: 33%; margin-right: 10px;" />
-    <img src="https://xp.io/storage/1zR8ibsR.png" alt="Project Logo" style="width: 33%; margin-right: 10px;" />
-    <img src="https://xp.io/storage/1zTtdgSC.png" alt="Project Logo" style="width: 33%; margin-right: 10px;" />
+    <img src="https://xp.io/storage/1zTmHM0J.png" alt="Project Logo" style="width: 30%; margin-right: 10px;" />
+    <img src="https://xp.io/storage/1zR8ibsR.png" alt="Project Logo" style="width: 30%; margin-right: 10px;" />
+    <img src="https://xp.io/storage/1zTtdgSC.png" alt="Project Logo" style="width: 30%; margin-right: 10px;" />
   </div>
 
   
